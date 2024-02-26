@@ -25,10 +25,10 @@ M.treesitter = {
 
 M.mason = {
   ensure_installed = {
-    -- lua
+    -- Lua
     "lua-language-server",
     "stylua",
-    -- web dev
+    -- Web Dev
     "css-lsp",
     "html-lsp",
     "typescript-language-server",
@@ -41,7 +41,7 @@ M.mason = {
     "gopls",
     -- custom
     "tailwindcss",
-    -- "biome", -- can be enabled for alternative formatting, check docs.
+    --"biome", -- can be enabled for alternative formatting, check docs.
   },
 }
 

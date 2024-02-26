@@ -8,8 +8,7 @@ M.general = {
     ["<C-l>"] = { "<cmd> TmuxNavigateRight<CR>", "window right" },
     ["<C-j>"] = { "<cmd> TmuxNavigateDown<CR>", "window down" },
     ["<C-k>"] = { "<cmd> TmuxNavigateUp<CR>", "window up" },
-    --["<leader>bf"] = { ":!biome format --write %<CR>", "run Biome formatter and write changes" },
-    ["<leader>bf"] = { ":silent !biome format --write %<CR>", "run Biome formatter and write changes" },
+    -- ["<leader>bf"] = { ":silent !biome format --write %<CR>", "run Biome formatter and write changes" },
     -- Make current file executeable
     ["<leader>zx"] = {
       "<cmd>!chmod +x %<CR>",
@@ -29,6 +28,11 @@ M.general = {
 
 -- enable format on save for all filetypes
 vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
+
+-- enable format on save for go
+vim.cmd [[
+autocmd BufWritePre *.go lua vim.lsp.buf.formatting_sync(nil, 1000)
+]]
 
 -- highlight yanked text for 200ms using the "Visual" highlight group
 vim.cmd [[
