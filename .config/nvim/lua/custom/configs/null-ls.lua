@@ -25,8 +25,7 @@ local eslint = b.formatting.eslint_d.with {
 }
 
 local sources = {
-  -- webdev
-  eslint, -- Use ESLint or tsserver based on the condition
+  eslint,
   b.formatting.deno_fmt,
   b.formatting.prettier.with {
     filetypes = {
@@ -46,6 +45,7 @@ local sources = {
       "typescriptreact",
     },
   },
+
   -- Lua
   b.formatting.stylua,
 
@@ -54,6 +54,12 @@ local sources = {
 
   -- python
   b.formatting.black,
+
+  -- go
+  b.formatting.gofumpt,
+  b.formatting.goimports_reviser,
+  b.formatting.golines,
+  b.diagnostics.golangci_lint,
 }
 
 null_ls.setup {

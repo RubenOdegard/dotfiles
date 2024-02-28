@@ -35,7 +35,7 @@ null_ls.setup {
   sources = setup_null_ls_sources(),
 }
 
--- Configure TSServer directly
+-- Configure TSServer
 lspconfig.tsserver.setup {
   on_attach = function(client)
     -- Disable document formatting provider for TSServer
@@ -44,6 +44,25 @@ lspconfig.tsserver.setup {
     on_attach(client)
   end,
   capabilities = capabilities,
+}
+
+-- Configure gopls
+lspconfig.gopls.setup {
+  cmd = { "gopls" }, -- Use the default path to the gopls binary
+  filetypes = { "go", "gomod", "gowork", "gotmpl" },
+  root_dir = lspconfig.util.root_pattern("go.mod", ".git"), -- Adjust root_dir patterns as needed
+  settings = {
+    gopls = {
+      staticcheck = true,
+      gofumpt = true,
+      usePlaceholders = true,
+      experimentalPostfixCompletions = true,
+      analyses = {
+        unusedparam = true,
+        fieldalignment = true,
+      },
+    },
+  },
 }
 
 -- Other LSP servers setup

@@ -29,11 +29,6 @@ M.general = {
 -- enable format on save for all filetypes
 vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
 
--- enable format on save for go
-vim.cmd [[
-autocmd BufWritePre *.go lua vim.lsp.buf.formatting_sync(nil, 1000)
-]]
-
 -- highlight yanked text for 200ms using the "Visual" highlight group
 vim.cmd [[
 augroup highlight_yank
