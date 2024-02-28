@@ -48,6 +48,9 @@ if [[ -n $SSH_CONNECTION ]]; then
 # Alias for managing dotfiles
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME" 
 
+# Testing nvim kickstart for a new config with sane defaults
+alias nvimk='NVIM_APPNAME="nvim-kickstart-modular" nvim'
+
 # open new window and panes in tmux, IDE style.
 alias ide='tmux new-window -n IDE \; split-window -v -p 25 \; split-window -h -p 40 \; select-pane -t 0 \; send-keys "nvim" C-m \; select-pane -t 1 \; send-keys "ls" C-m \; select-pane -t 0'
 # test

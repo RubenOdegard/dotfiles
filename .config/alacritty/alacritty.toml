@@ -41,7 +41,7 @@ unfocused_hollow = true
 TERM = "xterm-256color"
 
 [font]
-size = 12.0
+size =15 
 
 [font.bold]
 family = "GeistMono NFM"
@@ -59,6 +59,22 @@ style = "Italic"
 family = "GeistMono NFM"
 style = "Regular"
 
+# [font.bold]
+# family = "IosevkaTerm Nerd Font"
+# style = "Semi Bold"
+#
+# [font.bold_italic]
+# family = "IosevkaTerm Nerd Font"
+# style = "Semi Bold Italic"
+#
+# [font.italic]
+# family = "IosevkaTerm Nerd Font"
+# style = "Italic"
+#
+# [font.normal]
+# family = "IosevkaTerm Nerd Font"
+# style = "Regular"
+
 
 
 [selection]
@@ -68,7 +84,7 @@ semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
 [window]
 decorations = "Buttonless"
 dynamic_title = true
-opacity = 0.85
+opacity = 0.60
 blur = true
 
 [window.padding]

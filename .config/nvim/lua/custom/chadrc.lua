@@ -5,8 +5,8 @@ local M = {}
 local highlights = require "custom.highlights"
 
 M.ui = {
-  theme = "chadracula",
-  theme_toggle = { "chadracula", "one_light" },
+  theme = "nord",
+  theme_toggle = { "nord", "one_light" },
   telescope = { style = "bordered" }, -- borderless / bordered}
   nvdash = { -- Dashboard
     load_on_startup = true,
