@@ -35,7 +35,6 @@ alias sshconfig="nvim ~/.ssh/config"
 alias gitconfig="nvim ~/.gitconfig"
 # Open nvim config
 alias nvimconfig="cd ~/.config/nvim"
-
 # Change default editor when in SSH
 if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='vim'
