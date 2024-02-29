@@ -75,8 +75,6 @@ style = "Regular"
 # family = "IosevkaTerm Nerd Font"
 # style = "Regular"
 
-
-
 [selection]
 save_to_clipboard = true
 semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
