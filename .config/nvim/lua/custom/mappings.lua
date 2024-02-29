@@ -14,6 +14,10 @@ M.general = {
       "<cmd>!chmod +x %<CR>",
       silent = true,
     },
+    ["<leader>ft"] = {
+      "<cmd>:TodoTelescope<CR>",
+      "Find Todos",
+    },
   },
   v = {
     [">"] = { ">gv", "indent" },
