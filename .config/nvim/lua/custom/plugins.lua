@@ -4,7 +4,6 @@ local overrides = require "custom.configs.overrides"
 local plugins = {
 
   -- Override plugin definition options
-
   {
     "neovim/nvim-lspconfig",
     dependencies = {
@@ -241,6 +240,15 @@ local plugins = {
         return vim.fn["codeium#Clear"]()
       end, { expr = true, silent = true })
     end,
+  },
+
+  -- Todo-comments - Adds todo comments
+  -- Github: https://github.com/folke/todo-comments.nvim
+  {
+    "folke/todo-comments.nvim",
+    lazy = false,
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = {},
   },
 
   -- To make a plugin not be loaded

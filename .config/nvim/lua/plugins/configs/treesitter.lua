@@ -16,6 +16,19 @@ local options = {
     -- low level
     "c",
     "zig",
+
+    -- rust
+    "rust",
+
+    -- go
+    "go",
+
+    -- misc
+    "markdown",
+    "markdown_inline",
+
+    -- python
+    "python",
   },
 
   highlight = {

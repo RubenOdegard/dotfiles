@@ -8,6 +8,7 @@ fi
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export PATH=$PATH:$GOPATH/bin
 
 plugins=(
   git
@@ -32,6 +33,9 @@ alias sshhome="cd ~/.ssh"
 alias sshconfig="nvim ~/.ssh/config"
 # edit global git configuration
 alias gitconfig="nvim ~/.gitconfig"
+# Open nvim config
+alias nvimconfig="cd ~/.config/nvim"
+
 # Change default editor when in SSH
 if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='vim'
@@ -47,10 +51,8 @@ if [[ -n $SSH_CONNECTION ]]; then
 
 # Alias for managing dotfiles
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME" 
-
 # Testing nvim kickstart for a new config with sane defaults
 alias nvimk='NVIM_APPNAME="nvim-kickstart-modular" nvim'
-
 # open new window and panes in tmux, IDE style.
 alias ide='tmux new-window -n IDE \; split-window -v -p 25 \; split-window -h -p 40 \; select-pane -t 0 \; send-keys "nvim" C-m \; select-pane -t 1 \; send-keys "ls" C-m \; select-pane -t 0'
 # test
@@ -82,7 +84,6 @@ alias fzfkill='ps -ef | fzf -m | awk '\''{print $2}'\'' | xargs kill -9'
 alias fzfcd='cd "$(dirname "$(fzf)")"'
 
 # ls stuff, most are set in lib/directories.zsh
-# I use lsd (https://github.com/Peltoche/lsd) for certain listings
 alias ls='ls -GFh' # Colorize output, add file type indicator, and put sizes in human readable format
 alias ll='ls -GFhl' # Same as above, but in long listing format
 alias lh='ls -d .*' # show hidden files/directories only

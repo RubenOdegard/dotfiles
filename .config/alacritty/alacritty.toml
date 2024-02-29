@@ -84,7 +84,7 @@ semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
 [window]
 decorations = "Buttonless"
 dynamic_title = true
-opacity = 0.60
+opacity = 0.80
 blur = true
 
 [window.padding]
