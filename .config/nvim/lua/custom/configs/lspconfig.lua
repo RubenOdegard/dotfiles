@@ -48,9 +48,9 @@ lspconfig.tsserver.setup {
 
 -- Configure gopls
 lspconfig.gopls.setup {
-  cmd = { "gopls" }, -- Use the default path to the gopls binary
+  cmd = { "gopls" },
   filetypes = { "go", "gomod", "gowork", "gotmpl" },
-  root_dir = lspconfig.util.root_pattern("go.mod", ".git"), -- Adjust root_dir patterns as needed
+  root_dir = lspconfig.util.root_pattern("go.work", "go.mod", ".git"),
   settings = {
     gopls = {
       staticcheck = true,
@@ -66,7 +66,7 @@ lspconfig.gopls.setup {
 }
 
 -- Other LSP servers setup
-local servers = { "html", "cssls", "clangd", "pyright", "tailwindcss" }
+local servers = { "html", "cssls", "clangd", "pyright", "tailwindcss", "biome" }
 
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {

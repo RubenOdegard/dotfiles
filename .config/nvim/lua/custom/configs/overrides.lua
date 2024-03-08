@@ -44,7 +44,7 @@ M.mason = {
     "goimports_reviser",
     -- custom
     "tailwindcss",
-    --"biome", -- can be enabled for alternative formatting, check docs.
+    "biome", -- can be enabled for alternative formatting, check docs.
   },
 }
 

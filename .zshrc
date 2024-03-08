@@ -35,6 +35,10 @@ alias sshconfig="nvim ~/.ssh/config"
 alias gitconfig="nvim ~/.gitconfig"
 # Open nvim config
 alias nvimconfig="cd ~/.config/nvim"
+# Open .config directory 
+alias dotconfig="cd ~/.config"
+# Copy biome config to root of project
+alias initbiome="cp ~/.config/biome/biome.json ./"
 # Change default editor when in SSH
 if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='vim'
@@ -58,6 +62,8 @@ alias ide='tmux new-window -n IDE \; split-window -v -p 25 \; split-window -h -p
 alias websplit="tmux new-window -n WebSplit \; split-window -v -p 25 \; select-pane -t 0 \; send-keys "nvim" C-m \; select-pane -t 1 \; send-keys "lhost" C-m \;" 
 # open localhost:3000 in Arc.
 alias lhost="open -a Arc http://localhost:3000"
+# open localhost:3000 in Safari.
+alias lhostsaf="open -a Safari http://localhost:3000"
 # open finder in current directory
 alias finder="open ."
 # Easier navigation

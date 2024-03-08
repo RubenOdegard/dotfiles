@@ -26,7 +26,18 @@ local eslint = b.formatting.eslint_d.with {
 
 local sources = {
   eslint,
-  b.formatting.deno_fmt,
+  -- b.formatting.deno_fmt,
+  b.formatting.rome.with {
+    command = "biome",
+    filetypes = {
+      "typescript",
+      "typescript.tsx",
+      "typescriptreact",
+      "javascript",
+      "javascriptreact",
+      "javascript.jsx",
+    },
+  },
   b.formatting.prettier.with {
     filetypes = {
       "html",
@@ -35,17 +46,10 @@ local sources = {
       "json",
       "scss",
       "less",
-      "javascript",
-      "javascriptreact",
-      "javascript.jsx",
       "json",
       "jsonc",
-      "typescript",
-      "typescript.tsx",
-      "typescriptreact",
     },
   },
-
   -- Lua
   b.formatting.stylua,
 
@@ -54,12 +58,6 @@ local sources = {
 
   -- python
   b.formatting.black,
-
-  -- go
-  b.formatting.gofumpt,
-  b.formatting.goimports_reviser,
-  b.formatting.golines,
-  b.diagnostics.golangci_lint,
 }
 
 null_ls.setup {
