@@ -46,6 +46,8 @@ if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='nvim'
  fi
 
+ alias ssh-udev="ssh ruben@173.249.37.144 -i ~/.ssh/contabo-udev/contabo_udev_server_key_rsa"
+
 # Uncomment the following line if pasting URLs and other text is messed up.
  DISABLE_MAGIC_FUNCTIONS="true"
 

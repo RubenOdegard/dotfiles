@@ -29,7 +29,8 @@ white = "#E5E9F0"
 yellow = "#EBCB8B"
 
 [colors.primary]
-background = "#1b1e24"
+background = "#0a0a0a"
+# background = "#1b1e24"
 # background = "#2E3440" #backup color, from Nord Theme.
 foreground = "#D8DEE9"
 
@@ -44,37 +45,37 @@ TERM = "xterm-256color"
 size =15 
 offset.x = 0
 
-# [font.bold]
-# family = "GeistMono NFM"
-# style = "Semi Bold"
-#
-# [font.bold_italic]
-# family = "GeistMono NFM"
-# style = "Semi Bold Italic"
-#
-# [font.italic]
-# family = "GeistMono NFM"
-# style = "Italic"
-#
-# [font.normal]
-# family = "GeistMono NFM"
-# style = "Regular"
+[font.bold]
+family = "GeistMono NFM"
+style = "Semi Bold"
 
- [font.bold]
- family = "IosevkaTerm Nerd Font"
- style = "Semi Bold"
+[font.bold_italic]
+family = "GeistMono NFM"
+style = "Semi Bold Italic"
 
- [font.bold_italic]
- family = "IosevkaTerm Nerd Font"
- style = "Semi Bold Italic"
+[font.italic]
+family = "GeistMono NFM"
+style = "Italic"
 
- [font.italic]
- family = "IosevkaTerm Nerd Font"
- style = "Italic"
+[font.normal]
+family = "GeistMono NFM"
+style = "Regular"
 
- [font.normal]
- family = "IosevkaTerm Nerd Font"
- style = "Regular"
+ # [font.bold]
+ # family = "IosevkaTerm Nerd Font"
+ # style = "Semi Bold"
+ #
+ # [font.bold_italic]
+ # family = "IosevkaTerm Nerd Font"
+ # style = "Semi Bold Italic"
+ #
+ # [font.italic]
+ # family = "IosevkaTerm Nerd Font"
+ # style = "Italic"
+ #
+ # [font.normal]
+ # family = "IosevkaTerm Nerd Font"
+ # style = "Regular"
 
 [selection]
 save_to_clipboard = true
