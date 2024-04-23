@@ -46,6 +46,7 @@ if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='nvim'
  fi
 
+ alias ssh-root-udev="ssh root@173.249.37.144 -i ~/.ssh/contabo-udev/contabo_udev_server_key_rsa"
  alias ssh-udev="ssh ruben@173.249.37.144 -i ~/.ssh/contabo-udev/contabo_udev_server_key_rsa"
 
 # Uncomment the following line if pasting URLs and other text is messed up.
@@ -73,6 +74,8 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
+
+alias cleanswap='find . -type f -name "*.swp" -exec rm {} \;'
 
 # FZF Aliases
 export FZF_DEFAULT_OPTS="--bind='j:down,k:up'"
