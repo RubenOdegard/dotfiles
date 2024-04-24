@@ -29,7 +29,8 @@ white = "#E5E9F0"
 yellow = "#EBCB8B"
 
 [colors.primary]
-background = "#0a0a0a"
+# background = "#0a0a0a" -- OG Dark
+background = "#011118"
 # background = "#1b1e24"
 # background = "#2E3440" #backup color, from Nord Theme.
 foreground = "#D8DEE9"
@@ -42,8 +43,9 @@ unfocused_hollow = true
 TERM = "xterm-256color"
 
 [font]
-size =16 
-offset.x = 2
+size =15 
+offset.x = 3
+offset.y = 2
 
 # [font.bold]
 # family = "GeistMono NFM"
@@ -77,6 +79,23 @@ offset.x = 2
  family = "IosevkaTerm Nerd Font"
  style = "Regular"
 
+ # Missing Nerd Font Patch
+ # [font.bold]
+ # family = "Berkeley Mono"
+ # style = "Semi Bold"
+ #
+ # [font.bold_italic]
+ # family = "Berkeley Mono"
+ # style = "Semi Bold Italic"
+ #
+ # [font.italic]
+ # family = "Berkeley Mono"
+ # style = "Italic"
+ #
+ # [font.normal]
+ # family = "Berkeley Mono"
+ # style = "Regular"
+
 [selection]
 save_to_clipboard = true
 semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
@@ -84,7 +103,7 @@ semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
 [window]
 decorations = "Buttonless"
 dynamic_title = true
-opacity = 0.85
+opacity = 0.9
 blur = true
 
 [window.padding]
