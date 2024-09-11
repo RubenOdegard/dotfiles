@@ -44,8 +44,8 @@ TERM = "xterm-256color"
 
 [font]
 size =15 
-offset.x = 3
-offset.y = 2
+# offset.x = 5
+# offset.y = 20
 
 # [font.bold]
 # family = "GeistMono NFM"

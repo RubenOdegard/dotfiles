@@ -39,6 +39,9 @@ alias nvimconfig="cd ~/.config/nvim"
 alias dotconfig="cd ~/.config"
 # Copy biome config to root of project
 alias initbiome="cp ~/.config/biome/biome.json ./"
+# run biome lint on ./src
+alias biomelint="npx @biomejs/biome lint ./src"
+
 # Change default editor when in SSH
 if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='vim'
